@@ -1,7 +1,10 @@
 
-import styles from './page.module.css';
-const MusicTaste = ({ rating }) => {
+import '@/app/globals.css';
+
+function MusicTaste({ rating }) {
   return (
+    
+  
     <div className="music-taste-container">
       <h1 className="title">Your Music Taste</h1>
       <div className="rating-display">
@@ -11,12 +14,14 @@ const MusicTaste = ({ rating }) => {
       <p className="description">
         Based on your Spotify data, your music taste scores a {rating} out of 10! This rating considers the diversity of genres and artists you listen to.
       </p>
+    
       {/* Add sections for favorite genres/artists (optional) */}
       <div className="additional-info">
         {/* Add content based on user data (e.g., top genres, artists) */}
       </div>
     </div>
+
   );
-};
+}
 
 export default MusicTaste;

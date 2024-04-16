@@ -31,7 +31,7 @@ export default async function handler(req, res) {
     const accessToken = response.data.access_token;
 
     // Redirect the user to the home page or another relevant page
-    res.redirect(`/`);
+    res.redirect(`/taste/page`);
   } catch (error) {
     console.error('Error handling callback:', error);
     res.status(500).json({ error: 'Failed to handle callback' });

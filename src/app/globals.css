@@ -61,3 +61,56 @@ body {
 .login-button:hover {
   background-color: #179947;
 }
+
+ 
+.music-taste-container {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: full;
+  padding: 2rem;
+}
+
+  
+  .title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .rating-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  
+  .rating-number {
+    color: #f06292;
+    margin-right: 0.5rem;
+  }
+  
+  .rating-label {
+    color: #999;
+  }
+  
+  .description {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+  
+  .additional-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  
+  
