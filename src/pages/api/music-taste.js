@@ -32,9 +32,9 @@ export default async function handler(req, res) {
 
 function calculateRating(genres, artists) {
   // Implement your rating algorithm here
-  // Example: Calculate rating based on genre diversity
+  
   const uniqueGenres = new Set(genres);
   const genreDiversity = uniqueGenres.size;
-  const rating = genreDiversity * 2; // Multiply by a factor for illustration
+  const rating = genreDiversity * 2; 
   return rating;
 }
