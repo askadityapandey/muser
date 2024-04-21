@@ -1,4 +1,3 @@
-
 import '@/app/globals.css';
 import React, { useState, useEffect } from 'react';
 import styles from './page.module.css';
@@ -14,7 +13,11 @@ function MusicTaste() {
       setError(null);
 
       try {
-        const response = await fetch('/api/music-taste');
+        // Obtain the access token from wherever it's stored (e.g., local storage)
+        const accessToken = localStorage.getItem('accessToken');
+
+        // Make the request to fetch music taste data, including the access token in the headers
+        const response = await fetch('/api/music-taste?access_token=' + accessToken);
 
         if (!response.ok) {
           throw new Error('Failed to fetch music taste data');
